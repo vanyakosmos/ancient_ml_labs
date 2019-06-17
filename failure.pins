@@ -1,0 +1,125 @@
+; Tue Jun 11 13:45:26 EEST 2019
+; 
+;+ (version "3.1.1")
+;+ (build "Build 216")
+
+([lab5_Instance_22] of  AntivirusFailure
+
+	(drivers
+		"printer"
+		"mouse")
+	(os "Windows 10")
+	(reason "база антивірусу не була оновлена"))
+
+([lab5_Instance_23] of  DriversFailure
+
+	(drivers "mouse")
+	(os "OS X")
+	(reason "принтер не підключався через відсутність драйверів"))
+
+([lab5_Instance_24] of  ProcessorFailure
+
+	(cpu_model "Intel Pentium FDIV")
+	(drive_model "1")
+	(matherboard_model "1")
+	(ram_model "PC133 SDRAM")
+	(reason "помилка плавоючої точки у всіх процесорах intel вказаної серії")
+	(video_card_model "1"))
+
+([lab5_Instance_25] of  ProcessorFailure
+
+	(cpu_model "intel pentium 4")
+	(drive_model "1")
+	(matherboard_model "1")
+	(ram_model "PC133 SDRAM")
+	(reason "не завантажується жорсткий диск")
+	(video_card_model "1"))
+
+([lab5_Instance_26] of  ProcessorFailure
+
+	(cpu_model "intel pentium 4")
+	(drive_model "1")
+	(matherboard_model "1")
+	(ram_model "PC133 SDRAM")
+	(reason "перезавантажується циклічно")
+	(video_card_model "1"))
+
+([lab5_Instance_27] of  RAMFailure
+
+	(cpu_model "intel pentium 4")
+	(drive_model "1")
+	(matherboard_model "1")
+	(ram_model "PC133 SDRAM")
+	(reason "компьютер вмикається, але не працює")
+	(video_card_model "1"))
+
+([lab5_Instance_28] of  MemoryDriveFailure
+
+	(cpu_model "intel pentium 4")
+	(drive_model "1")
+	(matherboard_model "1")
+	(ram_model "PC133 SDRAM")
+	(reason "диск не знаходиться")
+	(video_card_model "1"))
+
+([lab5_Instance_29] of  MemoryDriveFailure
+
+	(cpu_model "intel pentium 4")
+	(drive_model "1")
+	(matherboard_model "1")
+	(ram_model "RDRAM")
+	(reason "повільно працює")
+	(video_card_model "1"))
+
+([lab5_Instance_30] of  VideoCardFailure
+
+	(cpu_model "intel pentium 4")
+	(drive_model "1")
+	(matherboard_model "1")
+	(ram_model "RDRAM")
+	(reason "артефакти на екрамі монітору")
+	(video_card_model "1"))
+
+([lab5_Instance_31] of  VideoCardFailure
+
+	(cpu_model "intel pentium 3")
+	(drive_model "1")
+	(matherboard_model "1")
+	(ram_model "RDRAM")
+	(reason "комп'ютер вимикається при роботі з 3D програмами")
+	(video_card_model "1"))
+
+([lab5_Instance_32] of  OverheatingFailure
+
+	(cpu_model "intel pentium 3")
+	(drive_model "1")
+	(matherboard_model "1")
+	(ram_model "RDRAM")
+	(reason "занадто багато бруду та пилюки")
+	(video_card_model "1"))
+
+([lab5_Instance_33] of  MotherboardFailure
+
+	(cpu_model "intel pentium 4")
+	(drive_model "1")
+	(matherboard_model "1")
+	(ram_model "RDRAM")
+	(reason "процесор холодний")
+	(video_card_model "1"))
+
+([lab5_Instance_34] of  MotherboardFailure
+
+	(cpu_model "intel pentium 4")
+	(drive_model "1")
+	(matherboard_model "1")
+	(ram_model "PC133 SDRAM")
+	(reason "комп'ютер не вмикається")
+	(video_card_model "1"))
+
+([lab5_Instance_35] of  DriversFailure
+
+	(drivers
+		"mouse"
+		"printer")
+	(os "Windows XP")
+	(reason "несправний драйвер"))

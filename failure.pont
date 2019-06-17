@@ -1,0 +1,127 @@
+; Tue Jun 11 13:45:26 EEST 2019
+; 
+;+ (version "3.1.1")
+;+ (build "Build 216")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot os
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot drivers
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot drive_model
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ram_model
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot lab5_Slot_13
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot matherboard_model
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot video_card_model
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot cpu_model
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot reason
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Failure
+	(is-a USER)
+	(role abstract)
+	(single-slot reason
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass SoftwareFailure
+	(is-a Failure)
+	(role abstract)
+	(single-slot os
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot drivers
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass AntivirusFailure
+	(is-a SoftwareFailure)
+	(role concrete))
+
+(defclass DriversFailure
+	(is-a SoftwareFailure)
+	(role concrete))
+
+(defclass HardwareFailure
+	(is-a Failure)
+	(role abstract)
+	(single-slot drive_model
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ram_model
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot matherboard_model
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot video_card_model
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot cpu_model
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass ProcessorFailure
+	(is-a HardwareFailure)
+	(role concrete))
+
+(defclass RAMFailure
+	(is-a HardwareFailure)
+	(role concrete))
+
+(defclass MotherboardFailure
+	(is-a HardwareFailure)
+	(role concrete))
+
+(defclass MemoryDriveFailure
+	(is-a HardwareFailure)
+	(role concrete))
+
+(defclass VideoCardFailure
+	(is-a HardwareFailure)
+	(role concrete))
+
+(defclass NetworkFailure
+	(is-a HardwareFailure)
+	(role concrete))
+
+(defclass OverheatingFailure
+	(is-a HardwareFailure)
+	(role concrete))
+
+(defclass CompatibilityFailure
+	(is-a HardwareFailure)
+	(role concrete))
